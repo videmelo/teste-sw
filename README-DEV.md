@@ -4,7 +4,7 @@
 
 O objetivo é desenvolver um sistema de inscrição em uma newsletter fictícia. O projeto será composto de duas partes, sendo elas o Front-end e o Back-end
 
-![exemplo front](./assets/design/subscribe.png)
+![exemplo front](./assets/subscribe.png)
 
 ### Front-end
 

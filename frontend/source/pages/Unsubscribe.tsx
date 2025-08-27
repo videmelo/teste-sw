@@ -40,10 +40,12 @@ export default function Unsubscribe() {
          ) : (
             <img src="/icons/error.svg" className="text-white w-72 mb-10" alt="" />
          )}
-         <h1 className="font-bold text-5xl mb-8">
+         <h1 className="font-bold max-[795px]:text-center text-5xl mb-8">
             {status === 'pending' ? 'Processando...' : status === 'success' ? 'Desinscrição bem-sucedida!' : 'Erro ao desinscrever'}
          </h1>
-         <p className="text-justify text-2xl mb-8">{status === 'pending' ? 'Aguarde enquanto processamos sua solicitação.' : message}</p>
+         <p className="text-justify  max-[795px]:text-center text-2xl mb-8">
+            {status === 'pending' ? 'Aguarde enquanto processamos sua solicitação.' : message}
+         </p>
          <img className="w-64 h-auto" src="/icons/logo-mindtech.svg" alt="" />
       </main>
    );

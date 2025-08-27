@@ -27,9 +27,11 @@ Este projeto consiste em um sistema completo para inscrição e descadastro em u
 -  O usuário pode se inscrever na newsletter informando seu e-mail.
 -  O backend valida e cadastra o e-mail, impedindo duplicidade.
 -  Ao validar e confirmar o e-mail um e-mail de boas vindas é enviado ao usuário, nele contendo um botão para se desinscrever
+
 ![exemplo email enviado ao concluir inscrição](./assets/email.png)
--  O usuário pode se descadastrar a qualquer momento.
--  O frontend consome a API do backend para todas as operações.
+
+-  O projeto utiliza da lib emailjs para enviar o e-email de boas vindas junto com a opção para se desinscrever, por segurança essa é a unica forma de remover o email da lista
+-  O usuário pode se descadastrar a qualquer momento acessando sua caixa de entrada.
 
 ## Como Rodar o Projeto
 
@@ -76,8 +78,3 @@ Este projeto consiste em um sistema completo para inscrição e descadastro em u
 
 -  O frontend estará disponível em `http://localhost:5173`
 -  O backend estará disponível em `http://localhost:3000`
-
-## Observações
-
--  O projeto segue o design proposto e está pronto para avaliação.
--  O projeto utiliza da lib emailjs para enviar o e-email de boas vindas junto com a opção para se desinscrever, por segurança essa é a unica forma de remover o email da lista

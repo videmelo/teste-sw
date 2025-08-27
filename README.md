@@ -48,10 +48,6 @@ Este projeto consiste em um sistema completo para inscrição e descadastro em u
    ```powershell
    npm install
    ```
-3. Execute as migrações do banco de dados:
-   ```powershell
-   npx prisma migrate dev --name init
-   ```
 4. Inicie o servidor:
    ```powershell
    npm start

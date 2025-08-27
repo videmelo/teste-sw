@@ -1,0 +1,17 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+# Prisma
+.prisma/
+prisma/generated/
+prisma/migrations/.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/

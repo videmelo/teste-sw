@@ -35,8 +35,8 @@ Este projeto consiste em um sistema completo para inscrição e descadastro em u
 
 ### Pré-requisitos
 
--  Node.js instalado
--  npm instalado
+-  Node.js instalado ``dev v22.14.0``
+-  npm instalado ``dev v11.4.2``
 
 ### Backend
 

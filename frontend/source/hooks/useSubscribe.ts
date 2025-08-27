@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import axios from 'axios';
 import emailjs from 'emailjs-com';
+import axios from '../services/api';
 
 export function useSubscribe() {
    const formRef = useRef<HTMLFormElement>(null);
@@ -32,7 +32,7 @@ export function useSubscribe() {
          return;
       }
       try {
-         const response = await axios.post('http://localhost:3000/subscribe', {
+         const response = await axios.post('/subscribe', {
             email: email.value,
          });
          await emailjs.send(

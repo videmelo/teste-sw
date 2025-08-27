@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../services/api';
 
 export default function Unsubscribe() {
    const [searchParams] = useSearchParams();
@@ -17,7 +17,7 @@ export default function Unsubscribe() {
 
       const timeout = setTimeout(() => {
          axios
-            .post('http://localhost:3000/unsubscribe', { id: emailId })
+            .post('/unsubscribe', { id: emailId })
             .then(() => {
                setStatus('success');
                setMessage('Você foi removido da nossa newsletter com sucesso.');

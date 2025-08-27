@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 export default function Layout() {
    const location = useLocation();
    return (
-      <div className="min-h-screen flex items-center">
+      <div className="card p-10 rounded-4xl max-w-[1215px] w-full h-fit flex items-center">
          <AnimatePresence mode="wait">
             <motion.div
                key={location.pathname}

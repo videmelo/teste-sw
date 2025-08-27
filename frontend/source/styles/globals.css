@@ -20,13 +20,30 @@
 }
 
 body {
-   background: radial-gradient(circle farthest-side at center center, #165cde -45%, #000000 55%);
+   background-color: var(--color-dark-blue);
    color: var(--foreground);
    font-family: Inter, Arial, Helvetica, sans-serif;
+   display: flex;
+   align-items: center;
+   min-height: 100vh;
+   height: fit-content;
+   justify-content: center;
+   padding: 1rem;
+}
+
+.card {
+   background: radial-gradient(circle farthest-side at center center, #165cde -45%, #000000 55%);
+}
+
+#root {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 @media (max-width: 1135px) {
-   body {
+   .card {
       background: radial-gradient(circle farthest-side at center center, #165cde -45%, #000000 70%);
    }
 }

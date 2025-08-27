@@ -44,7 +44,7 @@ export function useSubscribe() {
             },
             'z8EmYIq6I0lT-LKsZ'
          );
-         window.location.href = '/confirm';
+         window.location.href = `/confirm?email=${email.value}`;
       } catch (error: any) {
          setError(error.response?.data?.message || 'Erro ao tentar inscrever-se.');
       } finally {
